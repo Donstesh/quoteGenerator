@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>quoteGenerator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <body>
+        <!-- Div that will hold generated quotes -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Random Qute Generator</h1>
+                    <h3>Very Inspiring Quotes</h3>
+                    <hr>
+                </div>
+            </div>
+        <div id = "quote-container" class="generated-quote"></div>
+        <form class= "form">
+            Number of Quotes (Max 4): <br> <input id="quote-number" type="number" min= "1" max="4" value="1">
+            Quote type:
+            <input id="random" type="radio" name="type" value="random" checked>Random
+            <input id="general" type="radio" name="type" value="general">General
+            <button class ="btnQuote" id = "generateQuote">Generate Quote</button>
+            <button id = "resetBtn">Clear</button>
+        </form>
+   <script src="main.js"></script>
 </body>
 </html>
